@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 283948350803173456}
   - component: {fileID: 7855362274869647913}
   - component: {fileID: -1107907264773704934}
+  - component: {fileID: -7281278984118388810}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -108,7 +109,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -154,3 +155,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletMovement
   bulletForce: 250
+--- !u!114 &-7281278984118388810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6550483413923617043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc08e4caa01123a4a987ab8346c649f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletDamage
+  damageValue: 25
+  despawnTime: 10
+  destroyOnImpact: 1
