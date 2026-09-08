@@ -18,6 +18,9 @@ public class PlayerController : Controller
     public KeyCode pitchUp;
     public KeyCode pitchDown;
 
+    // Shoot key
+    public KeyCode shoot;
+
     public override void Start()
     {
     }
@@ -68,6 +71,8 @@ public class PlayerController : Controller
             {
                 pawn.PitchDown();
             }
+
+            // Shooting control
         }
     }
 }
