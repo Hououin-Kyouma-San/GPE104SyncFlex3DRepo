@@ -1789,6 +1789,7 @@ MonoBehaviour:
   rollStarboard: 101
   pitchUp: 115
   pitchDown: 119
+  shoot: 32
 --- !u!4 &1648609934
 Transform:
   m_ObjectHideFlags: 0

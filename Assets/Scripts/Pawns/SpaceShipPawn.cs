@@ -4,10 +4,12 @@ public class SpaceShipPawn : Pawn
 {
     private Rigidbody rb;
     private Transform tf;
+    private Shooter shoot;
     public override void Start()
     {
         rb = GetComponent<Rigidbody>();
         tf = GetComponent<Transform>();
+        shoot = GetComponent<Shooter>();
     }
     public override void Update()
     {
@@ -74,6 +76,15 @@ public class SpaceShipPawn : Pawn
         if (tf != null)
         {
             tf.Rotate(Vector3.left * Time.deltaTime * -pitchSpeed);
+        }
+    }
+
+    // Shoot method
+    public override void Shoot()
+    {
+        if (shoot != null)
+        {
+            shoot.Shoot();
         }
     }
 }

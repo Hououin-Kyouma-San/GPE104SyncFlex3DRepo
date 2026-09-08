@@ -24,4 +24,7 @@ public abstract class Pawn : MonoBehaviour
     // Pitch methods
     public abstract void PitchUp();
     public abstract void PitchDown();
+
+    // Shoot method
+    public abstract void Shoot();
 }

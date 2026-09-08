@@ -73,6 +73,11 @@ public class PlayerController : Controller
             }
 
             // Shooting control
+            if (Input.GetKeyDown(shoot))
+            {
+                pawn.Shoot();
+            }
+
         }
     }
 }
