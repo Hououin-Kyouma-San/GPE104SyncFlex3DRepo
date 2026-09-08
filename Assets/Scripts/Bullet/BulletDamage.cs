@@ -12,9 +12,15 @@ public class BulletDamage : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (destroyOnImpact)
+        Health health = collision.gameObject.GetComponent<Health>();
+
+        if (health != null)
         {
-            Destroy(gameObject);
+            health.TakeDamage(damageValue);
+            if (destroyOnImpact)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

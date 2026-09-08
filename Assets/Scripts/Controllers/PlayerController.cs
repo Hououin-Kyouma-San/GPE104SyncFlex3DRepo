@@ -20,6 +20,7 @@ public class PlayerController : Controller
 
     // Shoot key
     public KeyCode shoot;
+    public KeyCode flare;
 
     public override void Start()
     {
@@ -76,6 +77,10 @@ public class PlayerController : Controller
             if (Input.GetKeyDown(shoot))
             {
                 pawn.Shoot();
+            }
+            if (Input.GetKeyDown(flare))
+            {
+                pawn.Flare();
             }
 
         }

@@ -25,8 +25,8 @@ public class Lives : MonoBehaviour
         {
             // Disables the gameObject containing the component
             gameObject.SetActive(false);
-            SceneManager.LoadScene("GameOverScreen");
-            Time.timeScale = 1.0f;
+            //SceneManager.LoadScene("GameOverScreen");
+            //Time.timeScale = 1.0f;
         }
     }
 

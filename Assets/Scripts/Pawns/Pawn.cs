@@ -27,4 +27,5 @@ public abstract class Pawn : MonoBehaviour
 
     // Shoot method
     public abstract void Shoot();
+    public abstract void Flare();
 }

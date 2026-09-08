@@ -5,11 +5,13 @@ public class SpaceShipPawn : Pawn
     private Rigidbody rb;
     private Transform tf;
     private Shooter shoot;
+    private FlareShooter flare;
     public override void Start()
     {
         rb = GetComponent<Rigidbody>();
         tf = GetComponent<Transform>();
         shoot = GetComponent<Shooter>();
+        flare = GetComponent<FlareShooter>();
     }
     public override void Update()
     {
@@ -79,12 +81,19 @@ public class SpaceShipPawn : Pawn
         }
     }
 
-    // Shoot method
+    // Shoot methods
     public override void Shoot()
     {
         if (shoot != null)
         {
             shoot.Shoot();
+        }
+    }
+    public override void Flare()
+    {
+        if (flare != null)
+        {
+            flare.Flare();
         }
     }
 }
