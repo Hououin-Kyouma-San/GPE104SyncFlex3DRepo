@@ -20,14 +20,14 @@ public class SpaceShipPawn : Pawn
     {
         if (rb != null)
         {
-            rb.AddForce(tf.forward * thrustForce, ForceMode.Acceleration);
+            rb.AddForce(tf.forward * Time.deltaTime * (thrustForce * 100.0f), ForceMode.Acceleration);
         }
     }
     public override void ThrustReverse()
     {
         if (rb != null)
         {
-            rb.AddForce(tf.forward * -thrustForce, ForceMode.Acceleration);
+            rb.AddForce(tf.forward * Time.deltaTime * (-thrustForce * 100.0f), ForceMode.Acceleration);
         }
     }
 
